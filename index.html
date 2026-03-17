@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tour Guide Hub</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+}
+nav{
+    background:#ffffff;
+    padding:15px;
+    text-align:center;
+}
+nav button{
+    margin:5px;
+    padding:10px 20px;
+    font-size:16px;
+    cursor:pointer;
+}
+section{
+    display:none;
+    padding:40px 20px;
+}
+img{
+    max-width:90%;
+    margin:20px auto;
+    display:block;
+    border-radius:30px;
+}
+h1,h2,h3{
+    color:#0b6e4f;
+    margin:10px 0;
+}
+.container{
+    width:85%;
+    margin:40px auto;
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+}
+.contact-info,
+.contact-form{
+    background:#ffffff;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    flex:1;
+    min-width:300px;
+}
+input,textarea{
+    width:100%;
+    padding:10px;
+    margin:8px 0 15px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+button.submit-btn{
+    background-color:#0b6e4f;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+button.submit-btn:hover{
+    background-color:#084c38;
+}
+.flex-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+.flex-images img{
+    width: 45%; 
+    max-width: 700px;
+    height: auto;
+}
+.home-text{
+    text-align:left;
+    max-width:900px;
+    margin:0 auto 30px auto;
+}
+.home-header{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top:30px;
+}
+.home-header h1{
+    font-size:36px;
+    margin-top:15px;
+}
+.slider{  
+    width:1000px;  
+    height:450px;  
+    overflow:hidden;  
+    margin:auto;  
+    border-radius:20px; 
+}  
+.slides{  
+    display:flex;  
+    width:3000px; 
+    animation: slide 6s infinite;  
+}  
+.slides img{  
+    width:1000px;  
+    height:450px;  
+    border-radius:20px; 
+}  
+@keyframes slide{  
+    0% {margin-left:0px;}  
+    33% {margin-left:0px;}  
+    34% {margin-left:-1000px;}  
+    66% {margin-left:-1000px;}  
+    67% {margin-left:-2000px;}  
+    100% {margin-left:-2000px;}  
+}  
+</style>
+</head>
+<body>
+<div class="home-header">
+    <img src="C:\Users\786\Desktop\web project\WhatsApp Image 2026-02-22 at 4.07.25 PM.jpeg"style="position:top: 10px;left:10px;width:150px; height :auto;">
+    <h1 style="color:black;">Tour Guide Hub</h1>
+</div>
+<nav>
+<button onclick="showSection('home')">Home</button>
+<button onclick="showSection('hotels')">Hotels</button>
+<button onclick="showSection('things')">Things To Do</button>
+<button onclick="showSection('adventure')">Adventures</button>
+<button onclick="showSection('about')">About Us</button>
+<button onclick="showSection('contact')">Contact</button>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+
+
+<img src="C:\Users\786\Desktop\web project\Screenshot_27-2-2026_52737_.jpeg" width="1100" height="700">
+
+<div class="home-text">
+<h2>Find things to do by interest</h2>
+<p>Whatever you're into, we’ve got it</p>
+</div>
+
+<img src="C:\Users\786\Desktop\web project\WhatsApp Image 2026-02-22 at 3.49.41 PM.jpeg" width="1000" height="400">
+
+<div class="home-text">
+<h2>Explore near Islamabad</h2>
+<p>Can’t-miss picks near you</p>
+</div>
+
+<img src="C:\Users\786\Desktop\web project\manahil1 - Copy.jpeg" width="1000" height="500">
+
+<div class="home-text">
+<h2>Inspiration to get you going</h2>
+<p>Get ideas and inspiration to start planning your trip!</p>
+</div>
+
+<img src="C:\Users\786\Desktop\web project\manahil3.jpeg" width="1000" height="500">
+
+<div class="flex-images">
+    <img src="C:\Users\786\Desktop\web project\m.png" width="700" height="400">
+    <img src="C:\Users\786\Desktop\web project\manahil2.jpeg" width="700" height="400">
+</div>
+</section>
+
+<!-- HOTELS -->
+<section id="hotels">
+<img src="C:\Users\786\Desktop\web project\Blue and Brown Modern Resort Hotel Instagram Post.png">
+<img src="C:\Users\786\Desktop\web project\Untitled design.png">
+<img src="C:\Users\786\Desktop\web project\Untitled design2.png">
+<img src="C:\Users\786\Desktop\web project\Untitled design3.png">
+<img src="C:\Users\786\Desktop\web project\Untitled design5.png">
+<hr style="margin-left:60px;margin-top: 50px;margin-right:60px">
+<p>Email: info@tourguidehub.com</p>
+<p>Phone: +92 3001234567</p>
+<p>Phone: +92 4532675432</p>
+<p>Phone: +92 5685301065</p>
+</section>
+
+<!-- THINGS TO DO -->
+<section id="things">
+
+<!-- Slider for Things To Do -->
+<div class="slider">
+  <div class="slides">
+    <img src="C:\Users\786\Desktop\web project\web project\2.png">
+    <img src="C:\Users\786\Desktop\web project\web project\3.png">
+    <img src="C:\Users\786\Desktop\web project\web project\4.png">
+  </div>
+</div>
+
+<img src="C:\Users\786\Desktop\web project\web project\scre 1.jpg" style="margin-top:50px;margin-left:50px">
+<img src="C:\Users\786\Desktop\web project\web project\scre 2.jpg" style="margin-left:60px">
+<img src="C:\Users\786\Desktop\web project\web project\scr 3.jpg" style="margin-top:50px;margin-left:60px">
+<hr style="margin-left:60px;margin-top: 50px;margin-right:60px">
+
+<p style="margin-left:50px; font-size:20px;">Hotels</p>
+<p style="margin-left:50px; font-size:20px;">Things to Do</p>
+<p style="margin-left:50px; font-size:20px;">Adventures</p>
+<p style="margin-left:50px; font-size:20px;">About us</p>
+<p style="margin-left:50px; font-size:20px;">Contact us</p>
+</section>
+
+<!-- ADVENTURE -->
+<section id="adventure">
+<div class="slider">  
+  <div class="slides">  
+   <img src="C:\Users\786\Desktop\web project\web project\8.png">
+   <img src="C:\Users\786\Desktop\web project\web project\11.png">
+   <img src="C:\Users\786\Desktop\web project\web project\ag1.jpg">  
+  </div>  
+</div>
+<img src="C:\Users\786\Desktop\web project\web project\scr 6.png" style="margin-top:50px;margin-left:20px">
+<img src="C:\Users\786\Desktop\web project\web project\scr 12.jpg" style="margin-top:50px;margin-left:20px">
+<img src="C:\Users\786\Desktop\web project\web project\scr 13.jpg" style="margin-top:50px;margin-left:20px">
+<hr style="margin-left:60px;margin-top: 50px;margin-right:60px">
+
+<p style="margin-left:50px; font-size:20px;">Hotels</p>
+<p style="margin-left:50px; font-size:20px;">Things to Do</p>
+<p style="margin-left:50px; font-size:20px;">Adventures</p>
+<p style="margin-left:50px; font-size:20px;">About us</p>
+<p style="margin-left:50px; font-size:20px;">Contact us</p>
+</section>
+
+<!-- ABOUT US -->
+<section id="about">
+<div style ="width:100%; display :flex;">
+<!--left Side(text)-->
+<div style="width:50%;padding:20px;">
+<p>
+Tour Guide Hub was established to provide reliable and memorable travel experiences. 
+Our platform connects tourists with experienced local guides with deep knowledge of destinations, culture, and history. 
+We focus on customer satisfaction, safety, and quality service. 
+Whether you are planning a family vacation, educational tour, or adventure trip, Tour Guide Hub ensures your journey is comfortable and well-organized.
+</p>
+</div>
+<!--right side(Blank)-->
+<div style="width :50%;"></div>
+</div>
+<div style ="width:100%; display :flex;">
+<!--left Side(text)-->
+<div style="width:50%;padding:20px;">
+<h3>Our History</h3>
+<p>
+Founded in 2015 in Lahore, started as a small team of passionate travel enthusiasts. 
+It has grown into a full-fledged travel service offering guided tours across Pakistan. 
+We bridge the gap between travelers and authentic experiences with local guides.
+</p>
+</div>
+<!--right side(Blank)-->
+<div style="width :50%;"></div>
+</div>
+<p>
+<strong>Key Milestones:</strong><br>
+2015: Tour Guide Hub established in Lahore.<br>
+2017: Expanded services to include adventure and cultural tours.<br>
+2019: Launched online booking and personalized tour planning.<br>
+2021: Partnered with local businesses to provide immersive travel experiences.<br>
+2023: Recognized as a leading tour service hub for travelers in Pakistan.
+</p>
+<div class="contact-info">
+<h3>Contact Information</h3>
+<p><strong>Email:</strong> info@tourguidehub.com</p>
+<p><strong>Phone:</strong> +92 3001234567</p>
+<p><strong>Phone:</strong> +92 4532675432</p>
+<p><strong>Phone:</strong> +92 5685301065</p>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="container">
+<div class="contact-info">
+<h3>Contact Information</h3>
+<p><strong>Email:</strong> info@tourguidehub.com</p>
+<p><strong>Phone:</strong> +92 3001234567</p>
+<p><strong>Phone:</strong> +92 4532675432</p>
+<p><strong>Phone:</strong> +92 5685301065</p>
+</div>
+<div class="contact-form">
+<h3>Get in Touch</h3>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<input type="text" placeholder="Subject">
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button type="submit" class="submit-btn">Send Message</button>
+</form>
+</div>
+</div>
+</section>
+
+<script>
+function showSection(id){
+    const sections=document.querySelectorAll("section");
+    sections.forEach(section=>section.style.display="none");
+    document.getElementById(id).style.display="block";
+}
+showSection("home");
+</script>
+
+</body>
+</html>
